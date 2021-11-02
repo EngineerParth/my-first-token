@@ -60,7 +60,7 @@ function App() {
 				amount
 			);
 			await transaction.wait();
-			console.log(
+			window.alert(
 				`${amount} Coins successfully transferred to ${receiverAccount}`
 			);
 			getBalance();
@@ -68,7 +68,7 @@ function App() {
 	}
 	return (
 		<div className="App">
-			<span class="UserAccount" name="userAccount">
+			<span className="UserAccount" name="userAccount">
 				{userAccount || ""}
 			</span>
 			{userAccount === undefined ? (
