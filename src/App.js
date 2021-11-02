@@ -3,7 +3,7 @@ import "./App.css";
 import React, { useState } from "react";
 import { ethers } from "ethers";
 import MFToken from "./artifacts/contracts/MFToken.sol/MFToken.json";
-const tokenAddress = process.env.REACT_APP_MF_TOKEN_ADDR_LOCAL;
+const tokenAddress = process.env.REACT_APP_MF_TOKEN_ADDR_INFURA;
 
 function App() {
 	const [receiverAccount, setReceiverAccount] = useState();
